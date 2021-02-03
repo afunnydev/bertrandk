@@ -1,0 +1,30 @@
+{{- define "main" -}}
+<!-- Begin Main -->
+<main>
+    <div class="portfolio horizontal-slider centered">
+        <div class="swiper-container" id="swiper-centered-1">
+            <div class="swiper-wrapper">
+
+                {{ range where $.Site.RegularPages "Type" "portfolio" }}
+
+                <article class="swiper-slide">
+                    {{- $image := index .Params.images 0 -}}
+                    <figure>
+                        <img src="{{- $image.link -}}" alt="">
+                    </figure>
+
+                    <a href="{{- .Permalink -}}" class="overlay">
+                        <h2 class="title">{{ .Title }}</h2>
+
+                        <span class="categories">
+                            <span>{{ .Title }}</span>
+                        </span>
+                    </a>
+
+                </article>
+                {{- end -}}
+            </div>
+        </div>
+    </div>
+</main>
+{{- end -}}

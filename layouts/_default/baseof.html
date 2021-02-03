@@ -15,15 +15,18 @@
         {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
 
     </head>
-    <body>
+    <body class='{{- if or .IsHome (eq .Type "portfolio") -}}fullscreen{{- end -}}'>
+
+        <!-- Begin Loader -->
+        <div class="preloader">
+            <p>LOADING</p>
+            <span class="circle"></span>
+        </div>
+        <!-- End Loader -->
 
         {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
 
-        <main class="site-main" role="main">
-
-            {{ block "main" . }}{{ end }}
-
-        </main>
+        {{ block "main" . }}{{ end }}
 
         {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
 

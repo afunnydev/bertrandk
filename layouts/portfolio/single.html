@@ -1,0 +1,20 @@
+{{- define "main" -}}
+<!-- Begin Main -->
+<main>
+
+    <div class="gallery horizontal-slider scroll">
+        <div class="articles-wrapper">
+            {{- range .Params.images -}}
+            <figure class="swiper-slide">
+                <a href="{{- .link -}}">
+                    <img src="{{- .link -}}" alt="">
+                </a>
+                <figcaption>Agrandir</figcaption>
+            </figure>
+            {{- end -}}
+        </div>
+    </div>
+
+</main>
+<!-- End Main -->
+{{- end -}}

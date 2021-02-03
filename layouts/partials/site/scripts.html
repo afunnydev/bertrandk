@@ -1,3 +1,18 @@
-{{ $s := resources.Get "js/app.js" | minify }}
+{{ $jquery := resources.Get "js/jquery.js" -}}
+{{ $modernizr := resources.Get "js/modernizr.js" -}}
+{{ $easing := resources.Get "js/easing.js" -}}
+{{ $imagesloaded := resources.Get "js/imagesloaded.js" -}}
+{{ $fitvids := resources.Get "js/fitvids.js" -}}
+{{ $player := resources.Get "js/yt-player.js" -}}
+{{ $appear := resources.Get "js/appear.js" -}}
+{{ $popup := resources.Get "js/magnific-popup.js" -}}
+{{ $scrollbar := resources.Get "js/custom-scrollbar.js" -}}
+{{ $flexslider := resources.Get "js/flexslider.js" -}}
+{{ $kenburns := resources.Get "js/kenburns.js" -}}
+{{ $swiper := resources.Get "js/swiper.js" -}}
+{{ $isotope := resources.Get "js/isotope.js" -}}
+{{ $scripts := resources.Get "js/scripts.js" -}}
+{{ $custom := resources.Get "js/custom.js" }}
+{{ $js := slice $jquery $modernizr $easing $imagesloaded $fitvids $player $appear $popup $scrollbar $flexslider $kenburns $swiper $isotope $scripts $custom | resources.Concat "js/bundle.js" | minify }}
 
-<script src="{{ $s.Permalink }}"></script>
+<script src="{{ $js.Permalink }}"></script>

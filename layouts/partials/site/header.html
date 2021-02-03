@@ -1,5 +1,57 @@
-<header class="site-header" role="banner">
+<!-- Begin Header -->
+<header>
 
-    <strong><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></strong>
-    
+    <!-- Begin Logo -->
+    <div class="logo">
+        <a href="{{- $.Site.BaseURL -}}">
+            <img src="/img/logo-blue-100.png" alt="">
+        </a>
+    </div>
+    <!-- End Logo -->
+
+    <!-- Begin Mobile Nav Icon -->
+    <span class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </span>
+    <!-- End Mobile Nav Icon -->
+
+    <!-- Begin Navigation -->
+    <nav>
+        <ul>
+
+            <li><a class="{{- if .IsHome -}}active{{- end -}}" href="{{- $.Site.BaseURL -}}">Accueil</a></li>
+            <li>
+                <a class='{{- if eq .Type "portfolio" -}}active{{- end }}' href="#">Portfolio</a>
+                
+                <ul>
+                    {{/*  <li class="menu-item-has-children">
+                        <a href="#">Landing</a>
+                        <ul>
+                            <li><a href="#">Fullscreen Slideshow</a></li>
+                            <li><a href="#">Strips Slideshow</a></li>
+                            <li><a href="#">Strips Pages</a></li>
+                        </ul>
+                    </li>  */}}
+                    <li><a href="{{- $.Site.BaseURL -}}portfolio/paysages">Paysages</a></li>
+                    <li><a href="{{- $.Site.BaseURL -}}portfolio/sports">Sports</a></li>
+                    <li><a href="{{- $.Site.BaseURL -}}portfolio/flore">Flore</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class='{{- if eq .File.LogicalName "about.md" -}}active{{- end -}}' href="{{- $.Site.BaseURL -}}a-propos">
+                    À propos
+                </a>
+            </li>
+            <li>
+                <a class='{{- if eq .File.LogicalName "contact.md" -}}active{{- end -}}' href="{{- $.Site.BaseURL -}}contact">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End Navigation -->
+
 </header>
+<!-- End Header -->

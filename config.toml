@@ -1,12 +1,12 @@
-baseURL = "/"
-languageCode = "en-gb"
-title = "{TITLE}"
+baseURL = "https://www.bertrandk.photo/"
+languageCode = "fr"
+title = "Bertrand Kirouac | Photographe"
 
 enableRobotsTXT = true
 disableAliases = true
 
 [params]
-disallow_search_engines = false # set robots.txt to disallow everything
+disallow_search_engines = true # set robots.txt to disallow everything
 
 # add redirects/headers
 [outputs]
@@ -30,4 +30,7 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
+
+[permalinks]
+singles = "/:slug/"
 
