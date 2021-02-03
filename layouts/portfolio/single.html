@@ -4,10 +4,10 @@
 
     <div class="gallery horizontal-slider scroll">
         <div class="articles-wrapper">
-            {{- range .Params.images -}}
-            <figure class="swiper-slide">
-                <a href="{{- .link -}}">
-                    <img src="{{- .link -}}" alt="">
+            {{- range $i, $e := .Params.images -}}
+            <figure class="swiper-slide{{ if eq $i 2 }} active{{ end }}">
+                <a href="{{- $e.link -}}">
+                    <img src="{{- $e.link -}}" alt="">
                 </a>
                 <figcaption>Agrandir</figcaption>
             </figure>
