@@ -30,22 +30,6 @@ Author URL: https://themeforest.net/user/codesymbol/
     /* ---------------------- */
     /* Global                 */
     /* ---------------------- */
-        @font-face {
-            font-family: 'effra';
-            src: url('../includes/font/effra-regular.eot');
-            src: url('../includes/font/effra-regular.eot?#iefix') format('embedded-opentype'),
-                 url('../includes/font/effra-regular.woff') format('woff'),
-                 url('../includes/font/effra-regular.ttf') format('truetype'),
-                 url('../includes/font/effra-regular.svg#effraregular') format('svg');
-        }
-        @font-face {
-            font-family: 'effra_bold';
-            src: url('../includes/font/effra-bold.eot');
-            src: url('../includes/font/effra-bold.eot?#iefix') format('embedded-opentype'),
-                 url('../includes/font/effra-bold.woff') format('woff'),
-                 url('../includes/font/effra-bold.ttf') format('truetype'),
-                 url('../includes/font/effra-bold.svg#effrabold') format('svg');
-        }
         html {
             position: relative;
         }
@@ -57,7 +41,7 @@ Author URL: https://themeforest.net/user/codesymbol/
             letter-spacing: 0px;
             overflow-x: hidden;
             z-index: 0;
-            font-family: effra, arial;
+            font-family: 'Open Sans', sans-serif;
         }
         p {
             -webkit-font-smoothing: antialiased;
@@ -72,10 +56,10 @@ Author URL: https://themeforest.net/user/codesymbol/
             font-size: 14px;
         }
         h1, h2, h3, h4, h5, h6 {
-            font-family: effra_bold, effra;
         	margin-bottom: 20px;
             letter-spacing: 4px;
             text-transform: uppercase;
+            font-weight: 700;
         }
         h1 {
         	font-size: 48px;
@@ -173,7 +157,7 @@ Author URL: https://themeforest.net/user/codesymbol/
                 display:none
             }
             .font-bold {
-                font-family: effra_bold, effra;
+                font-weight: 700;
             }
             .has-background {
                 background-position: center;
@@ -1106,7 +1090,7 @@ Author URL: https://themeforest.net/user/codesymbol/
             margin-bottom: 20px;
         }
         .info-label .label {
-            font-family: effra_bold;
+            font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 0px;
             text-transform: uppercase;
@@ -1493,7 +1477,7 @@ Author URL: https://themeforest.net/user/codesymbol/
             opacity: 0.7;
         }
         .portfolio.horizontal-slider article .overlay .title {
-            font-family: 'effra';
+            font-family: 'Open Sans', sans-serif;
             position: relative;
             display: block;
             font-size: 14px;
@@ -1540,7 +1524,7 @@ Author URL: https://themeforest.net/user/codesymbol/
             font-size: 16px;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            font-family: effra_bold;
+            font-weight: 700;
             text-transform: uppercase;
             cursor: default;
         }
@@ -1657,7 +1641,7 @@ Author URL: https://themeforest.net/user/codesymbol/
             opacity: 0.7;
         }
         .portfolio.grid article .overlay .title {
-            font-family: 'effra';
+            font-family: 'Open Sans', sans-serif;
             position: relative;
             display: block;
             font-size: 14px;
@@ -1721,7 +1705,7 @@ Author URL: https://themeforest.net/user/codesymbol/
                     text-align: center;
                 }
                 .project .cover .overlay h1 {
-                    font-family: 'effra';
+                    font-family: 'Open Sans', sans-serif;
                     letter-spacing: 4px;
                     font-size: 24px;
                     line-height: 33px;
@@ -1867,7 +1851,7 @@ Author URL: https://themeforest.net/user/codesymbol/
                     clear: both;
                 }
                 .project .recent-projects h5 {
-                    font-family: effra;
+                    font-family: 'Open Sans', sans-serif;
                     font-size: 18px;
                     line-height: 38px;
                     letter-spacing: 4px;
@@ -1920,7 +1904,7 @@ Author URL: https://themeforest.net/user/codesymbol/
                     transform: translate(-50%, 0);
                 }
                 .project .recent-projects .overlay .title {
-                    font-family: effra;
+                    font-family: 'Open Sans', sans-serif;
                     font-size: 14px;
                     line-height: 24px;
                     letter-spacing: 4px;
@@ -1990,7 +1974,7 @@ Author URL: https://themeforest.net/user/codesymbol/
                     min-width: 160px;
                 }
                 .project.style-1 .info .info-box .label {
-                    font-family: effra_bold;
+                    font-weight: 700;
                     font-size: 13px;
                     letter-spacing: 2px;
                     margin-bottom: 0px;
@@ -2208,7 +2192,7 @@ Author URL: https://themeforest.net/user/codesymbol/
             font-size: 16px;
             letter-spacing: 2px;
             margin-bottom: 15px;
-            font-family: effra_bold;
+            font-weight: 700;
             text-transform: uppercase;
             cursor: default;
         }
@@ -2635,7 +2619,7 @@ Author URL: https://themeforest.net/user/codesymbol/
         }
         .contact-form textarea {
             height: 150px;
-            font-family: 'effra';
+            font-family: 'Open Sans', sans-serif;
         }
         .contact-form input[type="submit"] {
             padding: 8px 19px;

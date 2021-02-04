@@ -4,6 +4,7 @@ description: >-
   Sensations garanties en passant au travers ces images de gens passionnés qui se dépassent au jour le jour dans leur sport respectif.
 weight: 2
 images:
+  - link: /img/sports/resized028.jpg
   - link: /img/sports/resized000_1.jpg
   - link: /img/sports/resized001_1.jpg
   - link: /img/sports/resized002_1.jpg
@@ -32,7 +33,6 @@ images:
   - link: /img/sports/resized025_1.jpg
   - link: /img/sports/resized026_1.jpg
   - link: /img/sports/resized027_1.jpg
-  - link: /img/sports/resized028.jpg
   - link: /img/sports/resized029.jpg
   - link: /img/sports/resized030.jpg
   - link: /img/sports/resized031.jpg

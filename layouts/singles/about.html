@@ -1,10 +1,10 @@
 {{- define "main" -}}
 <!-- Begin Main -->
-<main class="page page-about-me has-background" style="background-image:url('/images/about1.jpg');">
+<main class="page page-about-me has-background" style="background-image:url('{{ .Params.profile_bg }}');">
     <div class="wrapper">
 
         <div class="tablet-mobile-image-container">
-            <img class="tablet-mobile-image" src="/images/about3.jpg" alt="">
+            <img class="tablet-mobile-image" src="{{ .Params.profile_img }}" alt="">
         </div>
 
         <div class="content">
@@ -13,14 +13,14 @@
 
                 <div class="column one-fourth">
                     <div class="info-label">
-                        <p class="label">Name</p>
-                        <p class="text">Frank Williams</p>
+                        <p class="label">Nom</p>
+                        <p class="text">Bertrand Kirouac</p>
                     </div>
                 </div>
                 <div class="column one-fourth">
                     <div class="info-label">
-                        <p class="label">Title</p>
-                        <p class="text">Photographer</p>
+                        <p class="label">Titre</p>
+                        <p class="text">Photographe</p>
                     </div>
                 </div>
                 <div class="column one-fourth">
@@ -31,27 +31,25 @@
                 </div>
                 <div class="column one-fourth last">
                     <div class="info-label">
-                        <p class="label">Place</p>
-                        <p class="text">London, UK</p>
+                        <p class="label">Location</p>
+                        <p class="text">Montréal, QC, CA</p>
                     </div>
                 </div>
 
                 <span class="divider40"></span>
 
-                <p>Vestibulum tellus risus, pretium et facilisis nec, porta in felis. Nullam fermentum, lorem nec tincidunt tempus, lectus venenatis nisi, quis ultrices tortor arcu id diam. Nunc eros est.</p>
-                <p>Vestibulum tellus risus, pretium et facilisis nec, porta in felis. Nullam fermentum, lorem nec tincidunt tempus.</p>
+                {{ .Content }}
 
                 <div class="column one-half phone-number">
                     <address>
-                        +51 (0)6 21 51 43 88
+                        +15145031993
                     </address>
                 </div>
                 <div class="column one-half last social-profiles">
                     <ul>
-                        <li><a href="#" class="icons-facebook"></a></li>
-                        <li><a href="#" class="icons-twitter"></a></li>
-                        <li><a href="#" class="icons-instagram"></a></li>
-                        <li><a href="#" class="icons-behance"></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/bertrandk.photo/" class="icons-instagram"></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/kirouacphoto" class="icons-facebook"></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/bertrand-kirouac-229731b9" class="icons-linkedin"></a></li>
                     </ul>
                 </div>
 
@@ -60,7 +58,7 @@
         </div>
 
         <div class="desktop-image-container">
-            <img class="desktop-image" src="/images/about2.jpg" alt="">
+            <img class="desktop-image" src="{{ .Params.profile_img }}" alt="">
         </div>
 
     </div>
